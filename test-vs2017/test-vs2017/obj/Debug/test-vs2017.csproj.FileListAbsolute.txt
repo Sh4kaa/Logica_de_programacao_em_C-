@@ -1,0 +1,7 @@
+C:\Users\Administrador\Documents\Logica_de_Programacao\Logica_de_programacao_em_C-\test-vs2017\test-vs2017\bin\Debug\test-vs2017.exe.config
+C:\Users\Administrador\Documents\Logica_de_Programacao\Logica_de_programacao_em_C-\test-vs2017\test-vs2017\bin\Debug\test-vs2017.exe
+C:\Users\Administrador\Documents\Logica_de_Programacao\Logica_de_programacao_em_C-\test-vs2017\test-vs2017\bin\Debug\test-vs2017.pdb
+C:\Users\Administrador\Documents\Logica_de_Programacao\Logica_de_programacao_em_C-\test-vs2017\test-vs2017\obj\Debug\test-vs2017.csprojAssemblyReference.cache
+C:\Users\Administrador\Documents\Logica_de_Programacao\Logica_de_programacao_em_C-\test-vs2017\test-vs2017\obj\Debug\test-vs2017.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Documents\Logica_de_Programacao\Logica_de_programacao_em_C-\test-vs2017\test-vs2017\obj\Debug\test-vs2017.exe
+C:\Users\Administrador\Documents\Logica_de_Programacao\Logica_de_programacao_em_C-\test-vs2017\test-vs2017\obj\Debug\test-vs2017.pdb
