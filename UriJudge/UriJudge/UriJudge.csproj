@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B1A851CC-8AA2-4A2B-9C85-1C83ABBF9EAC}</ProjectGuid>
+    <ProjectGuid>{E1BEECF7-50BD-4746-8E53-805052BC83AF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConsoleApp12</RootNamespace>
-    <AssemblyName>ConsoleApp12</AssemblyName>
+    <RootNamespace>UriJudge</RootNamespace>
+    <AssemblyName>UriJudge</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

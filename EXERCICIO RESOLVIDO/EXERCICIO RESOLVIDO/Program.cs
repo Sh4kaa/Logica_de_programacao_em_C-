@@ -20,7 +20,7 @@ namespace EXERCICIO_RESOLVIDO
             comprimento = Double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             precoMetroQuadrado = Double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-             area = largura * comprimento;
+            area = largura * comprimento;
             preco = area * precoMetroQuadrado;
 
             Console.WriteLine("AREA=" + area.ToString("F2", CultureInfo.InvariantCulture));
