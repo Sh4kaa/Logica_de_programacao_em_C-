@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Globalization;
+
 
 
 namespace base_altura_retangulo
@@ -9,11 +9,11 @@ namespace base_altura_retangulo
         static void Main(string[] args)
         {
             double area, raio;
-            raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            area = 3.14159 * raio * raio; // PI vezes raio ao quadrado para calcular area
-            Console.WriteLine("A= " + area.ToString("F4", CultureInfo.InvariantCulture));
-            Console.WriteLine();
-            Console.ReadLine();
+            raio = double.Parse(Console.ReadLine());
+            area = 3.14159 * raio * raio;
+            Console.WriteLine("A=" + area.ToString("F4"));
+
+            // forma cxorreta que Judge online aceita
         }
     }
 }
