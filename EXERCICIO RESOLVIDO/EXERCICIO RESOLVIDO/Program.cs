@@ -12,7 +12,7 @@ namespace EXERCICIO_RESOLVIDO
         static void Main(string[] args)
         {
             double largura  ;
-            double comprimento  ;           
+            double comprimento  ;
             double area ;
             double precoMetroQuadrado, preco ;
 
@@ -21,12 +21,12 @@ namespace EXERCICIO_RESOLVIDO
             precoMetroQuadrado = Double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
              area = largura * comprimento;
-            preco = area * precoMetroQuadrado;
+            preco = area * precoMetroQuadrado; 
 
             Console.WriteLine("AREA=" + area.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("PRECO=" + preco.ToString("F2", CultureInfo.InvariantCulture));
             Console.ReadLine();
-            
+
 
 
         }
