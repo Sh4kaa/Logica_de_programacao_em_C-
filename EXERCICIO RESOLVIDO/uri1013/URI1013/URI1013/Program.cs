@@ -23,7 +23,7 @@ namespace URI1013
              maiorAB = (a + b + Math.Abs(a -b)) / 2;
              maiorAB = (c + maiorAB + Math.Abs(maiorAB - c)) / 2;
 
-            // AB = (a + b + (abs * (a - b))) / 2;
+            
 
 
             Console.WriteLine(maiorAB +" eh o maior");
