@@ -13,19 +13,19 @@ namespace uri1021_moedas
         {
             int cem, cinquenta, vinte, dez, cinco, dois;
             int resto1, resto2, resto3, resto4, resto5, resto6;            
-            int m1, m050, m025, m010, m05, m01;
-            double N1, N;
+            int m1, m050, m025, m010, m05, m01, N1;
+            double  N;
            
             
 
             N = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            N1 = N * 100;
+            N1 = (int) N * 100;
             
             
 
             
             //conversao de notas
-            cem = (int) N / 100;
+            cem =  (int) N / 100;
             resto1 = (int) N % 100;
 
             cinquenta = resto1 / 50;
@@ -44,7 +44,7 @@ namespace uri1021_moedas
             resto6 = resto5 % 2;
 
 
-            resto6 = (int) N1;
+            resto6 =  73 * 100 ;
                                  
             
             //conversao moedas
