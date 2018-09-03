@@ -27,7 +27,8 @@ namespace uri_1046
             }
             Console.ReadLine();            
 
-            
+           /* segredo é pegar o valor inicial subtrair por 24, no caso 24 menos o horario
+            * inicial o resultado soma-se com o horaio final */
 
                         
         }
