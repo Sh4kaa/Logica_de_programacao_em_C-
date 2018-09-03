@@ -36,25 +36,32 @@ namespace _1045_triangulos
                 b = c;
                 c = temp;
             }
-            if ( a != (b + c))
+            if (a >= b + c)
             {
                 Console.WriteLine("NAO FORMA TRIANGULO");
             }
-            if ( Math.Pow(b, 2) == ( Math.Pow(b, 2) + Math.Pow(c, 2)))
+            else
             {
-                Console.WriteLine("TRIANGULO RETANGULO");
-            }
-            if ( Math.Pow(a, 2) > (Math.Pow(b, 2) + Math.Pow(c, 2)))
-            {
-                Console.WriteLine("TRIANGULO OBTUSANGULO");
-            }
-            if (Math.Pow(a, 2) < (Math.Pow(b,2) + Math.Pow(c, 2)))
-            {
-                Console.WriteLine("TRIANGULO ACUTANGULO");
-            }
-            if (a == b && a== c && b == c)
-            {
-                Console.WriteLine("TRIANGULO EQUILATERO");
+                if (Math.Pow(a, 2.0) == Math.Pow(b, 2.0) + Math.Pow(c, 2.0))
+                {
+                    Console.WriteLine("TRIANGULO RETANGULO");
+                }
+                if (Math.Pow(a, 2.0) > Math.Pow(b, 2.0) + Math.Pow(c, 2.0))
+                {
+                    Console.WriteLine("TRIANGULO OBTUSANGULO");
+                }
+                if (Math.Pow(a, 2.0) < Math.Pow(b, 2.0) + Math.Pow(c, 2.0))
+                {
+                    Console.WriteLine("TRIANGULO ACUTANGULO");
+                }
+                if (a == b && a == c && b == c)
+                {
+                    Console.WriteLine("TRIANGULO EQUILATERO");
+                }
+                else if (a == b || a == c || b == c)
+                {
+                    Console.WriteLine("TRIANGULO ISOSCELES");
+                }
             }
             Console.ReadLine();
         }
