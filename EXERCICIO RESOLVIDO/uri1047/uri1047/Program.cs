@@ -18,13 +18,25 @@ namespace uri1047
             horaFinal = int.Parse(vet[2]);
             minutoFinal = int.Parse(vet[3]);
 
-            hora = (24 - hInicial) + horaFinal;
-            minutos = (60 - minutoInicial) + minutoFinal;
-            if (hora > 24 )
+            hora = horaFinal - hInicial;
+            
+
+            if ( hora < 0)
             {
-                hora = hora - 24;
-                minutos = minutos - 60;
-                Console.WriteLine("O JOGO DUROU " + hora + " HORA(S) E " + minutos + " MINUTOS" );
+                hora += 24;
+            }
+
+            minutos = minutoFinal - minutoInicial;
+            
+            if (minutos < 0)
+            {
+                minutos += 60;
+                hora -= 1;                
+            }
+
+            if (minutos == 0 && hora == 0)
+            {
+                Console.WriteLine("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
             }
             else
             {
@@ -32,8 +44,9 @@ namespace uri1047
             }
             Console.ReadLine();
 
-            /* segredo é pegar o valor inicial subtrair por 24, no caso 24 menos o horario
-             * inicial o resultado soma-se com o horaio final */
+            /* segredo é pegar o valor final subtrair pelo inicial,
+             * 
+             *  */
         }
     }
 }
