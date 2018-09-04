@@ -20,24 +20,26 @@ namespace uri1047
             horas = horaFinal - horaInicial;
             
 
-            if ( horas < 0)
+            if ( horas == 0)
             {
                 horas = 24 + (horaFinal - horaInicial);
             }
 
             minutos = minutoFinal - minutoInicial;
             
-            if (minutos < 0)
+            if (minutos == 0)
             {
                 minutos = 60 + (minutoFinal - minutoInicial);
-                horas--;
+                
             }
 
             if (horaInicial == horaFinal && minutoInicial == minutoFinal)
             {
-                horas = horas + 24;
-               
-                
+                // horas = horas + 24;
+
+
+                //Console.WriteLine("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
+
                 Console.WriteLine("O JOGO DUROU " + horas + " HORA(S) E " + minutos + " MINUTOS");
             }
             else
