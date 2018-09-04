@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace uri1047
 {
@@ -10,37 +7,42 @@ namespace uri1047
     {
         static void Main(string[] args)
         {
-            int hInicial, minutoInicial, horaFinal, minutoFinal, tempo, hora, minutos;
+            int horaInicial, minutoInicial, horaFinal, minutoFinal, horas, minutos;
             string[] vet;
+
             vet = Console.ReadLine().Split(' ');
-            hInicial = int.Parse(vet[0]);
+
+            horaInicial = int.Parse(vet[0]);
             minutoInicial = int.Parse(vet[1]);
             horaFinal = int.Parse(vet[2]);
             minutoFinal = int.Parse(vet[3]);
 
-            hora = horaFinal - hInicial;
+            horas = horaFinal - horaInicial;
             
 
-            if ( hora < 0)
+            if ( horas < 0)
             {
-                hora += 24;
+                horas = 24 + (horaFinal - horaInicial);
             }
 
             minutos = minutoFinal - minutoInicial;
             
             if (minutos < 0)
             {
-                minutos += 60;
-                hora -= 1;                
+                minutos = 60 + (minutoFinal - minutoInicial);
+                horas--;
             }
 
-            if (minutos == 0 && hora == 0)
+            if (horaInicial == horaFinal && minutoInicial == minutoFinal)
             {
-                Console.WriteLine("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)");
+                horas = horas + 24;
+               
+                
+                Console.WriteLine("O JOGO DUROU " + horas + " HORA(S) E " + minutos + " MINUTOS");
             }
             else
             {
-                Console.WriteLine("O JOGO DUROU " + hora + " HORA(S) E " + minutos + " MINUTOS");
+                Console.WriteLine("O JOGO DUROU " + horas + " HORA(S) E " + minutos + " MINUTOS");
             }
             Console.ReadLine();
 
