@@ -1,0 +1,48 @@
+exemplo:
+
+salario = 3002
+- 2000 sobra 1002
+1000 * 0.08
+2 * 18 / 10
+obs(2000 + 1000 + 2(diferenca) salario - 2000)
+===================
+
+salario > 4500:
+salario = 4750
+
+temos que ir decompondo o valor seguindo a tabela
+
+- 2000
+1000 * 0.08 %
+1500 * 0.18 %
+250 * 28 diferenca o mesmo que salario - 4500
+
+
+obs(2000+ 1000 + 1500 + 250(diferença) = salario 4750)
+=======================
+exxemplo: salario > 3000
+
+salario 3999
+
+2000 isento
+1000 * 0.08 %
+diferenca 999 * 0.18 %
+diferenca = salario - 3000
+
+
+obs(2000 + 1000 + 999(diferença) = salario = 3999)
+====================
+exemplo 3:
+salario > 2000
+
+salario = 2700 - 2000(isento)
+
+700 * 0.08 %  (700 e diferenca x 8)
+
+obs (2000 + 700 = salario:2700)
+
+
+
+
+
+
