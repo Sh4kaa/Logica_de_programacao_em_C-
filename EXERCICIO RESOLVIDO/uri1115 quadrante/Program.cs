@@ -15,7 +15,7 @@ namespace uri1115_quadrante
             x = int.Parse(vet[0]);
             y = int.Parse(vet[1]);
 
-            while (x != 0 || y != 0)
+            while (x != 0 && y != 0)
             {
                 if (x > 0 && y > 0)
                 {
