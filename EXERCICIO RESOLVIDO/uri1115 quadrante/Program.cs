@@ -38,7 +38,7 @@ namespace uri1115_quadrante
                 y = int.Parse(vet[1]);
 
             }
-            Console.WriteLine(" ");
+            
             Console.ReadLine();
         }
     }
