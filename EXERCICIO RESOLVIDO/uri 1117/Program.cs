@@ -10,29 +10,36 @@ namespace uri_1117
     class Program
     {
         static void Main(string[] args)
-        {
-            double nota, soma = 0, media;
-            int cont = 0;
+        {                     
+            
+            double nota1, nota2, media;
 
-            nota = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
-            while (cont < 2)
+            nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            while (nota1 < 0 || nota1 > 10)
             {
-                if (nota < 0)
-                {
-                    Console.WriteLine("nota invalida");
-                }
-                else if (nota > 0 && nota <= 10)
-                {
-                    soma = nota + soma;
-                    cont++;
-
-                }
-                nota = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                Console.WriteLine("nota invalida");
+                nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             }
 
-            media = soma / cont;
-            Console.WriteLine("media = " + media.ToString("f2", CultureInfo.InvariantCulture));
+            nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            if (nota2 < 0 || nota2 > 10)
+            {
+                Console.WriteLine("nota invalida");
+            }
+
+            while (nota2 < 0 || nota2 > 10)
+            {
+                nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                Console.WriteLine("nota invalida");                
+            }
+
+                   
+            
+
+                media = (nota1 + nota2) / 2;
+                Console.WriteLine("media = " + media.ToString("f2", CultureInfo.InvariantCulture));             
+                                  
+            
             Console.ReadLine();
         }
     }
