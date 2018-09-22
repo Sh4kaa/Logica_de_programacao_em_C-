@@ -25,13 +25,7 @@ namespace uri_1117
             if (nota2 < 0 || nota2 > 10)
             {
                 Console.WriteLine("nota invalida");
-            }
-
-            while (nota2 < 0 || nota2 > 10)
-            {
-                nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-                Console.WriteLine("nota invalida");                
-            }
+            }         
 
                    
             
