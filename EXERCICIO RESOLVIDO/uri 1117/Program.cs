@@ -13,25 +13,31 @@ namespace uri_1117
         {                     
             
             double nota1, nota2, media;
-
-            nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            while (nota1 < 0 || nota1 > 10)
+            do
             {
-                Console.WriteLine("nota invalida");
                 nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            }
+                if (nota1 < 0 || nota1 > 10)
+                {
+                    Console.WriteLine("nota invalida");
+                }
 
-            nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            if (nota2 < 0 || nota2 > 10)
+            } while (nota1 < 0 || nota1 > 10);
+
+
+            do
             {
-                Console.WriteLine("nota invalida");
-            }         
+                nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+                if (nota2 < 0 || nota2 > 10)
+                {
+                    Console.WriteLine("nota invalida");
+                }
 
-                   
-            
+            } while (nota2 < 0 || nota2 > 10);
 
-                media = (nota1 + nota2) / 2;
-                Console.WriteLine("media = " + media.ToString("f2", CultureInfo.InvariantCulture));             
+
+
+            media = (nota1 + nota2) / 2;
+            Console.WriteLine("media = " + media.ToString("f2", CultureInfo.InvariantCulture));             
                                   
             
             Console.ReadLine();
