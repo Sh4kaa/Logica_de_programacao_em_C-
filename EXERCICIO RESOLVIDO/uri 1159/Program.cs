@@ -10,7 +10,8 @@ namespace uri_1159
     {
         static void Main(string[] args)
         {
-            int x, soma = 0, troca;
+            int x, soma = 0, troca, cont=0;
+
 
             x = int.Parse(Console.ReadLine());
             while(x != 0)
@@ -18,36 +19,37 @@ namespace uri_1159
                 if(x %  2 == 0)
                 {
                     troca = x; 
-                    soma += troca;
-                    troca = troca + 2;
-                    soma += troca;
-                    troca = troca + 2;
-                    soma += troca;
-                    troca = troca + 2;
-                    soma += troca;
-                    troca = troca + 2;
-                    soma += troca;
+                    while(cont < 5)
+                    {
+                        soma += troca;
+                        troca = troca + 2;
+                        cont++;
+
+                    }
+
                     Console.WriteLine(soma);
 
                 }
                 else
                 {
-                    x = x + 1; 
+                    x += +1;
                     troca = x;
-                    soma += troca;
-                    troca = troca + 2;
-                    soma += troca;
-                    troca = troca + 2;
-                    soma += troca;
-                    troca = troca + 2;
-                    soma += troca;
-                    troca = troca + 2;
-                    soma += troca;
+
+                    while (cont < 5)
+                    {
+                        soma += troca;
+                        troca = troca + 2;
+                        cont++;
+
+                    }
+
                     Console.WriteLine(soma);
                 }
+
                 x = int.Parse(Console.ReadLine());
                 soma = 0;
                 troca = 0;
+                cont = 0;
             }
             Console.ReadLine();
 
