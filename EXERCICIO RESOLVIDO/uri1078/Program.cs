@@ -14,7 +14,7 @@ namespace uri1078
             n = int.Parse(Console.ReadLine());
             for (int i = 1; i <= 10; i++)
             {
-                int resultado = i * n;
+                 int resultado = i * n;
                 Console.WriteLine(n + " x " + i + " = " + resultado);
             }
 
