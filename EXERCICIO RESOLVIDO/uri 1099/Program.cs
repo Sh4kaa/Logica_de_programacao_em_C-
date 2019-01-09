@@ -38,8 +38,7 @@ namespace uri_1099
                 Console.WriteLine(soma);
                
             }
-            Console.ReadLine();
-            
+            Console.ReadLine();           
 
             
 
