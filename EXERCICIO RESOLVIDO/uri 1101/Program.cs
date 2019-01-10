@@ -10,7 +10,7 @@ namespace uri_1101
     {
         static void Main(string[] args)
         {
-            int m, n, a, b, soma=0;
+            int m, n, a=0, b=0, soma=0;
             string[] vet;
 
             do
@@ -20,15 +20,16 @@ namespace uri_1101
                 n = int.Parse(vet[1]);
                 if (m > n)
                 {
-                    a = m;
-                    b = n;
-                    m = b;
-                    n = a;
+                    a = n;
+                    b = m;
+                   
                 }
-                for (int i = m; i <= n; i++)
+                for (int i = a; i <= b; i++)
                 {
                     soma += i;
-                    Console.Write(i + " " + "Sum=");
+                    Console.Write(i + " "+ soma);
+
+                    soma = 0;
                 }
             } while (m <= 0 || n <= 0);
             Console.ReadLine();
