@@ -10,32 +10,43 @@ namespace uri_1101
     {
         static void Main(string[] args)
         {
-            int m, n, a=0, b=0, soma=0;
+            int m = 1, n = 1, a, b, soma = 0;
             string[] vet;
 
-            do
+            while (m != 0 && m > 0 && n != 0 && n > 0)
             {
-                vet = Console.ReadLine().Split(' ');
-                m = int.Parse(vet[0]);
-                n = int.Parse(vet[1]);
-                if (m > n)
-                {
-                    a = n;
-                    b = m;
-                   
-                }
-                for (int i = a; i <= b; i++)
-                {
-                    soma += i;
-                    Console.Write(i + " "+ soma);
+               
+                    vet = Console.ReadLine().Split(' ');
+                    m = int.Parse(vet[0]);
+                    n = int.Parse(vet[1]);
 
+                    if (m > n)
+                    {
+                        a = n;
+                        b = m;
+                    }
+                    else
+                    {
+                        a = m;
+                        b = n;
+                    }
+
+                    for (int z = a; z <= b; z++)
+                    {
+                        soma += z;
+                        Console.Write(z + " ");
+                    }
+                    Console.Write("Sum=" + soma);
                     soma = 0;
-                }
-            } while (m <= 0 || n <= 0);
+                    Console.WriteLine();
+                
+
+            }
+
+
+
             Console.ReadLine();
 
-
-            
         }
     }
 }
