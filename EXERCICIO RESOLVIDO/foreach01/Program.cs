@@ -19,7 +19,8 @@ namespace foreach01
                 vet[i] = Console.ReadLine();
             }
             Console.WriteLine("Nomes lidos:");
-            foreach (string x in vet)
+
+            foreach (string x in vet) // para cada "elemento" ou "x" "in=dentro" do vet faça tal coisa
             {
                 Console.WriteLine(x);
             }
