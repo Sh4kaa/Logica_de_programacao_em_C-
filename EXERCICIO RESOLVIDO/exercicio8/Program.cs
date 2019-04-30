@@ -37,6 +37,12 @@ namespace exercicio8
                     maiorAlt += altura[i];
                 }
             }
+            //obs para ordenar qual numero é maior.
+            // só pegar a variavel que foi gravado o numero
+            // e perguntar se é maior que o maior e atribuir a resposta do calculo
+            // para a variavel que criou com nome "maior"
+            // nesse caso oq foi gravado na variavel altura vai ser atribuido na variavel
+            // que colocamos com nome de "maiorAlt"
 
             Console.WriteLine(maiorAlt.ToString("f2", CultureInfo.InvariantCulture));
             Console.ReadLine();
