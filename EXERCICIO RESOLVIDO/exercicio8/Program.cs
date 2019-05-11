@@ -13,11 +13,13 @@ namespace exercicio8
         {
             int N;
             N = int.Parse(Console.ReadLine());
-            double maiorAlt = 0, menorAlt, mediaAltMulher, aux=0;
+            double mediaAltMulher, soma=0.0;
             double[] altura = new double[N];
             string[] sexo = new string[N];
-            int numHomens;
+            int cont=0;
             string[] dados;
+            int quantH = 0;
+
 
             
 
@@ -26,17 +28,54 @@ namespace exercicio8
                 dados = Console.ReadLine().Split(' ');
                 altura[i] = double.Parse(dados[0], CultureInfo.InvariantCulture);                
                 sexo[i] = dados[1];
-
+                if (sexo[i] == "F")
+                {
+                    cont++;
+                    soma += altura[i];
+                }
+                if ( sexo[i] == "M")
+                {
+                    quantH++; 
+                }
                
             }
+
+            // comparação menor altura
+            int menorAlt = 0;
+            double menor=0.0;
+
+            for (int i = 0; i < N; i++)
+            {
+                if (altura[i] < altura[menorAlt])
+                {
+                    menorAlt = i;
+                    menor = altura[i];
+                }
+
+            }
+            Console.WriteLine("Menor Altura = " + menor.ToString("f2", CultureInfo.InvariantCulture));
+
+
+            // comparação maior altura
+
+            double maiorAlt = 0;
 
             for (int i = 0; i < N; i++)
             {
                 if (altura[i] > maiorAlt)
                 {
-                    maiorAlt += altura[i];
+                    maiorAlt = altura[i];
                 }
+
+               
             }
+            mediaAltMulher = soma / cont;
+
+            Console.WriteLine("Maior Altura = " + maiorAlt.ToString("f2", CultureInfo.InvariantCulture));
+            Console.WriteLine("Media das alturas das mulheres " + mediaAltMulher.ToString("f2", CultureInfo.InvariantCulture));
+            Console.WriteLine("Numero de homens " + quantH);
+
+            
             //obs para ordenar qual numero é maior.
             // só pegar a variavel que foi gravado o numero
             // e perguntar se é maior que o maior e atribuir a resposta do calculo
@@ -44,7 +83,8 @@ namespace exercicio8
             // nesse caso oq foi gravado na variavel altura vai ser atribuido na variavel
             // que colocamos com nome de "maiorAlt"
 
-            Console.WriteLine(maiorAlt.ToString("f2", CultureInfo.InvariantCulture));
+            
+            
             Console.ReadLine();
 
 
