@@ -17,33 +17,41 @@ namespace exercicio_2
             N = int.Parse(s[1]);
             mat = new int[N, M];
 
-
+            // lendo todos os numero da matriz
             for (int i = 0; i < M; i++)
             {
-                s = Console.ReadLine().Split(' ');
+                string[] s2 = Console.ReadLine().Split(' ');
                 for (int j = 0; j < N; j++)
                 {
-                    mat[i, j] = int.Parse(s[j]);
+                    mat[i, j] = int.Parse(s2[j]);
                 }
             }
-
-            int[] vet = new int[M];
-
+            // Mostrando a diagonal principal
+            Console.WriteLine("DIAGONAL PRINCIPAL");
             for (int i = 0; i < M; i++)
             {
-                int soma = 0;
+                Console.Write(mat[i, i] + " ");
+            }
+            Console.WriteLine();
+
+
+            // calculando a quantidade de numero negativos
+            int soma = 0;
+            for (int i = 0; i < M; i++)
+            {
+
                 for (int j = 0; j < N; j++)
                 {
-                    soma = soma + mat[i, j];
+                    if (mat[i, j] < 0)
+                    {
+                        soma++;
+                    }
 
                 }
-                vet[i] = soma;
-            }
 
-            for (int i = 0; i < M; i++)
-            {
-                Console.WriteLine(vet[i]);
             }
+            Console.WriteLine("QUATIDADE DE NUMEROS NEGATIVOS: " + soma);
+
             Console.ReadLine();
 
         }
