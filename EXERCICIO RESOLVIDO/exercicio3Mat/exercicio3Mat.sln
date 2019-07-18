@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exercicio3Mat", "exercicio3Mat.csproj", "{D031F5B1-7CA9-4C57-BFD7-E64BD3565DD5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D031F5B1-7CA9-4C57-BFD7-E64BD3565DD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D031F5B1-7CA9-4C57-BFD7-E64BD3565DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D031F5B1-7CA9-4C57-BFD7-E64BD3565DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D031F5B1-7CA9-4C57-BFD7-E64BD3565DD5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8932C5AC-E22E-432E-8E96-C0A2B28C6618}
+	EndGlobalSection
+EndGlobal
